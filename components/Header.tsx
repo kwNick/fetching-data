@@ -10,6 +10,7 @@ const Header = () => {
                     <span className='absolute w-full h-[5%]] border-b border-b-[#9932CC] bottom-0 -left-[100%] 
                     group-hover:translate-x-[100%] duration-300' />
                 </p>
+
                 <p>
                     <Link href="/login">Login</Link>
                 </p>

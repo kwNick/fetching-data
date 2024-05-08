@@ -18,7 +18,7 @@ const page = async () => {
         }
         return response.json();
     };
-    const apiData = await getData();
+    // const apiData = await getData();
     const apiProducts = await getProducts();
     return (
         <div>
@@ -29,8 +29,8 @@ const page = async () => {
             {
                 apiProducts?.products.map((x: { id: string, images: [] }) => (
                     x.images.map((x: any) => (
-                        <div className='w-auto h-auto'>
-                            <Image src={x} alt="pic" height={500} width={500} className='w-auto h-auto' />
+                        <div className=''>
+                            <Image src={x} alt="pic" height={500} width={500} className='w-auto h-auto object-cover' />
                         </div>
                     ))
                 ))
